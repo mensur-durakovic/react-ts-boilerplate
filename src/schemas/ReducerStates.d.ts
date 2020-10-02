@@ -1,4 +1,5 @@
 interface IReducerStates {
-  list: IItem[];
+  list: any;
+  market: any;
   router: any;
 }

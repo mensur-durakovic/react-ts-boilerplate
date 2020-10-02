@@ -1,0 +1,61 @@
+{
+    "marketOverview": {
+        "size": "4000",
+        "units": "tons",
+        "geography": "Sri Lanka",
+        "geographyScope": "50%",
+        "qatarScope": "50%",
+        "marketStage": {
+            "name": "Mature",
+            "description": "Revenue varies between -5% and +5% over the last 3 years"
+        },
+        "EBITDA": "N/A",
+        "volatilityDemand": "Resistive and showing constant or improving trends through previous years and years of distress",
+        "mecSensitive": {
+            "name": "Slightly sensitive",
+            "description": "economic change impacts core revenue but not more than 20%"
+        }
+    },
+    "industryPrioritization": {
+        "externalShocks": {
+            "name": "There is no or very low risk of adverse changes foreseen",
+            "description": "There are no known ongoing discussions on potential adverse law / policy changes"
+        },
+        "sectorPriority": {
+            "name": "Considered by government but not protected",
+            "description": "The sub-sector is considered or mentioned as a prioritized sub-sector for the government but no specific measures to promote or protect it (e.g., subsidies, tax exemptions, etc.) have been witnessed in the last 12 months"
+        }
+    },
+    "competitor": [{
+            "name": "One Fertilizer",
+            "marketShare": "80%",
+            "totalAmount": 6500000,
+            "geography": "Qatar"
+        },
+        {
+            "name": "Ace chemicals",
+            "marketShare": "22%",
+            "totalAmount": 6500000,
+            "geography": "India"
+        }
+    ],
+    "competition": {
+        "internationalSupplier": {
+            "name": "Imports are not concentrated around few sources of supply",
+            "description": "(15+ international suppliers of the same or similar product)"
+        },
+        "localSupplier": {
+            "name": "Multiple small to medium players (5-10) with no major influence",
+            "description": "(e.g. no government support OR uninfluential shareholder)"
+        },
+        "localProducer": {
+            "totalCapacity": 50,
+            "units": "Tons",
+            "capacityUtilization": "No local players"
+        },
+        "entryBarrier": {
+            "name": "Low barriers",
+            "description": "enter in the industry"
+        }
+    }
+}

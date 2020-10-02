@@ -7,11 +7,13 @@ import store, { history } from '../redux/store';
 
 const Dashboard = React.lazy(() => import('../screens/dashboard/dashboard'));
 const Reports = React.lazy(() => import('../screens/reports/reports'));
+const Market = React.lazy(() => import('../screens/market/market'));
 
 const publicPaths = [
   { exact: true, path: '/', component: Dashboard },
   { exact: true, path: '/dashboard', component: Dashboard },
-  { exact: true, path: '/reports', component: Reports }
+  { exact: true, path: '/reports', component: Reports },
+  { exact: true, path: '/market', component: Market }
 ];
 
 const publicRoutes = publicPaths.map(({ path, ...props }) => (

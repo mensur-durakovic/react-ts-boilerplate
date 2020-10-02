@@ -1,15 +1,15 @@
-import { FETCH_LIST_SUCCESS } from '../actions';
+import { FETCH_DASHBOARD_DATA_SUCCESS } from '../actions';
 
 type Props = {
   type: string;
-  payload: any;
+  payload: IDashboardData[];
 };
 
-const INITIAL_STATE: any[] = [];
+const INITIAL_STATE: IDashboardData[] = [];
 
 export default (state = INITIAL_STATE, { type, payload }: Props) => {
   switch (type) {
-    case FETCH_LIST_SUCCESS:
+    case FETCH_DASHBOARD_DATA_SUCCESS:
       return payload;
     default:
       return state;

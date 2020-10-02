@@ -13,24 +13,24 @@ const Dashboard: React.FC<Props> = () => {
 
   useEffect(() => {
     (async () => {
-      await setFetching(true);
+      setFetching(true);
 
       try {
-        await dispatch(fetchList());
+        dispatch(fetchList());
       } catch (error) {
         console.error(error);
       }
 
       setFetching(false);
     })();
-  }, [dispatch]);
+  }, [dispatch, list]);
 
   return (
     <>
       <div className="dashboard">
         <div>Dashboard</div>
         {fetching && <Spinner />}
-        {!fetching && <UserDetails user={list[0]} />}
+        {!fetching && list.length > 0 && <UserDetails user={list[0]} />}
       </div>
     </>
   );

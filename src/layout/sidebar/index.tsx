@@ -1,6 +1,6 @@
 import React from 'react';
 import { Menu } from 'antd';
-import { ControlFilled, AreaChart } from '@ant-design/icons';
+import { ControlFilled, AreaChart, HeatMap } from '@ant-design/icons';
 import { RouteComponentProps, withRouter } from 'react-router';
 import { NavLink } from 'react-router-dom';
 
@@ -29,6 +29,12 @@ class Sidebar extends React.Component<PropsType> {
           <NavLink to="/reports">
             <AreaChart />
             <span>Reports</span>
+          </NavLink>
+        </Menu.Item>
+        <Menu.Item key="/market">
+          <NavLink to="/market">
+            <HeatMap />
+            <span>Market Overview</span>
           </NavLink>
         </Menu.Item>
       </Menu>
